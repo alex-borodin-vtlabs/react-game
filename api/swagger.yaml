@@ -1,0 +1,50 @@
+---
+swagger: "2.0"
+info:
+  version: "0.0.0"
+  title: "CardGame"
+paths:
+  /results:
+    get:
+      description: "Gets player scores\n"
+      operationId: "resultsGET"
+      parameters: []
+      responses:
+        200:
+          description: "Successful response"
+          schema:
+            type: "array"
+            title: "scores"
+            items:
+              $ref: "#/definitions/Person"
+      x-swagger-router-controller: "Default"
+    post:
+      description: "Posts new score\n"
+      operationId: "resultsPOST"
+      parameters:
+      - name: "name"
+        in: "query"
+        description: "Name of a player"
+        required: true
+        type: "string"
+      - name: "score"
+        in: "query"
+        description: "Player's score"
+        required: true
+        type: "integer"
+      responses:
+        201:
+          description: "Successful response"
+          schema:
+            type: "array"
+            title: "scores"
+            items:
+              $ref: "#/definitions/Person"
+      x-swagger-router-controller: "Default"
+definitions:
+  Person:
+    properties:
+      name:
+        type: "string"
+      score:
+        type: "integer"

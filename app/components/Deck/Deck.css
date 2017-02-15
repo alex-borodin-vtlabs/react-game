@@ -1,0 +1,8 @@
+.deck {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+.hidden {
+  opacity: 0;
+}

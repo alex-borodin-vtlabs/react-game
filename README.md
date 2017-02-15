@@ -6,21 +6,14 @@ This is a very simple React boilerplate setup. It includes a basic starting poin
 
 ## Requirements
 
+React memory card game.
+
 Install `yarn`, read how [here](https://yarnpkg.com/en/docs/install).
 
-## Installation
-
-Run the following commands:
-
-1. `git clone git@github.com:DPOrganizer/react-boilerplate.git`
-2. `cd react-boilerplate`
-3. `yarn install`
-
-To start the application you can now run: `yarn start`
+Please, use Chrome browser.
 
 ## Available commands
 
-- `yarn lint` Run code linting
 - `yarn test` Run tests using jest
 - `yarn test-coverage` Run tests using jest and display coverage
 - `yarn build` Bundle the application
